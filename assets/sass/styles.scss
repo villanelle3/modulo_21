@@ -1,3 +1,5 @@
+@import "mediaq";
+
 $redshade: #e84a65;
 $blackshade: #323232;
 $blackshaddarkder: #1b1b1b;
@@ -74,7 +76,7 @@ $blackshaddarkder: #1b1b1b;
 }
 
 .carr{
-    img{ 
+    #imagemain{ 
         width: 100%;
     }
     .cont-relative{

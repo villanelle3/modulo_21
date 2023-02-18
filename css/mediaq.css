@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .carr #imagemain {
+    width: 100%;
+  }
+  .carr .cont-relative {
+    position: absolute;
+  }
+  .carr .cont-relative .centered {
+    margin-top: 32px;
+  }
+  .carr .cont-relative .centered .titles {
+    font-size: 12px;
+  }
+  .carr .cont-relative .centered .bigtitles {
+    font-size: 34px;
+  }
+  .carr .cont-relative .centered .text {
+    font-size: 12px;
+  }
+  .carr .cont-relative .centered .btns .btn-warning {
+    width: 100%;
+    justify-content: center;
+  }
+  .carr .cont-relative .centered .btns .btn-outline-light {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    margin-top: 16px;
+  }
+  .firstsection {
+    padding: 28px 14px 182px;
+  }
+  .firstsection .titles-section {
+    font-size: 14.6px;
+  }
+  .firstsection .mediumtitles {
+    font-size: 32px;
+  }
+  .firstsection .desc {
+    font-size: 14px;
+  }
+  .firstsection .small {
+    font-size: 20px;
+  }
+  #first {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* For tablets: */
+}
+
+/*# sourceMappingURL=mediaq.css.map */

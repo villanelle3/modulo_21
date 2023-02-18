@@ -1,0 +1,64 @@
+$breakpoints: (phone: 640px,  tablet: 768px, desktop: 1024px) !default;
+
+@media screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .carr{
+        #imagemain{ 
+            width: 100%;
+        }
+        .cont-relative{
+            position: absolute;
+            .centered{
+                margin-top: 32px;
+                .titles{
+                    font-size: 12px;
+    
+                }
+                .bigtitles{
+                    font-size: 34px;
+                }
+                .text{
+                    font-size: 12px;
+                }
+                .btns{
+                    
+                    .btn-warning{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                    .btn-outline-light{
+                        width: 100%;
+                        justify-content: center;
+                        margin: 0;
+                        margin-top: 16px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .firstsection{
+        padding: 28px 14px 182px;
+        .titles-section{
+            font-size: 14.6px;
+        }
+        .mediumtitles{
+            font-size: 32px;
+        }
+        .desc{
+            font-size: 14px;
+        }
+        .small{
+            font-size: 20px;
+        }
+    }
+
+    #first{
+        border-left: 1px solid rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* For tablets: */
+}
