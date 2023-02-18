@@ -28,6 +28,14 @@ $(document).ready(function(){
             img.src = imageDesc;
             img2.src = imageDesc2;
         }
+
+        if(width <= 959 && width >= 768 ){
+            $('.var').removeClass('col-md-6').addClass('col-md-12');
+        }
+        else{
+            $('.var').removeClass('col-md-12').addClass('col-md-6');
+        }
+
     });
 })
 

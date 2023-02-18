@@ -81,8 +81,30 @@ $breakpoints: (phone: 640px,  tablet: 768px, desktop: 1024px) !default;
             }
         }
     }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    #numbers{
+        display: none;
+    }
+
+    #titles-section{
+        font-size: 32px;
+    }
+
+    .sec4{
+        .titles-section{
+            font-size: 14.6px;
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* For tablets: */
+    #numbers{
+        display: block;
+    }
 }
