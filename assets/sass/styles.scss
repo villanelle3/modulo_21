@@ -8,6 +8,22 @@ $blackshaddarkder: #1b1b1b;
     text-shadow: 0.5px 0.5px 0.5px #5e0816;
 }
 
+@mixin relative{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+@mixin centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80%;
+    border-radius: 16px;
+}
+
 
 * {
     margin: 0;
@@ -80,19 +96,11 @@ $blackshaddarkder: #1b1b1b;
         width: 100%;
     }
     .cont-relative{
-        position: relative;
-        text-align: center;
-        color: white;
+        @include relative();
         @include shadow();
         .centered {
-            background-color: rgba(0, 0, 0, 0.2);
-            width: 80%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include centered();
             padding: 32px;
-            border-radius: 16px;
             .text, .titles{
                 font-weight: bolder;
             }
@@ -156,5 +164,46 @@ $blackshaddarkder: #1b1b1b;
     }
     .small{
         font-size: 25px;
+    }
+}
+
+.center-content{
+    text-align: center;
+    p{
+        padding: 0 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.list{
+    list-style-type: none;
+    .item{
+        display: inline;
+        img{
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.sec3{
+    margin-top: 8.6vh;
+    #img2{
+        width: 100%;
+    }
+    .rel{
+        @include relative();
+        .centered{
+            @include centered();
+            background-color: rgba(0, 0, 0, 0.6);
+            .row{
+                padding: 32px;
+                .mediumtitles{
+                    color: white;
+                    @include shadow();
+                    text-align: left;
+                }
+            }
+        }
     }
 }

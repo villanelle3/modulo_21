@@ -46,6 +46,21 @@
   #first {
     border-left: 1px solid rgba(0, 0, 0, 0.4);
   }
+  .center-content h1 {
+    font-size: 14.6px;
+  }
+  .center-content h2 {
+    font-size: 32px;
+  }
+  .center-content p {
+    font-size: 14px;
+  }
+  .sec3 .rel .centered .row {
+    padding: 24px;
+  }
+  .sec3 .rel .centered .row .mediumtitles {
+    font-size: 32px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For tablets: */
