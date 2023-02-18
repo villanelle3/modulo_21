@@ -72,6 +72,15 @@
   .sec4 .titles-section {
     font-size: 14.6px;
   }
+  .padded {
+    margin-top: 32px;
+  }
+  .padded #whatTheySay {
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+  }
+  .padded #whatTheySay .titles.titles-section {
+    padding-top: 24px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For tablets: */

@@ -323,3 +323,27 @@ $blackshaddarkder: #1b1b1b;
         }
     }
 }
+
+.padded{
+    margin-top: 64px;
+    #whatTheySay{
+        background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+        .titles.titles-section{
+            @include shadow();
+            padding-top: 64px;
+        }
+        .mediumtitles{
+            @include shadow();
+        }
+        hr{
+            width: 20%;
+            margin: auto;
+            border: 1.5px solid $redshade;
+            margin-bottom: 40px;
+        }
+        span{
+            font-weight: bold;
+        }
+    }
+}
+
