@@ -1,4 +1,158 @@
-body{
-    background-color: red;
-    padding:0;
+$redshade: #e84a65;
+$blackshade: #323232;
+$blackshaddarkder: #1b1b1b;
+
+@mixin shadow{
+    text-shadow: 0.5px 0.5px 0.5px #5e0816;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titles{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    &-section{
+        letter-spacing: 2px;
+        color: $blackshaddarkder;
+    }
+}
+
+.mediumtitles{
+    font-size: 48px;
+    font-weight: bold;
+    color: $blackshaddarkder;
+}
+
+.bigtitles{
+    font-size: 76px;
+    font-weight: bold;
+    color: $redshade;
+}
+
+.text{
+    font-size: 16px;
+}
+
+.navbar-dark .nav-item.active .nav-link,
+.navbar-dark .nav-item .nav-link:active,
+.navbar-dark .nav-item .nav-link:focus,
+.navbar-dark .nav-item:hover .nav-link {
+    color: $redshade;
+    font-weight: bold;
+    @include shadow();
+}
+
+.nav-item{
+    padding: 13px 20px;
+    @include shadow();
+}
+
+.navbar-dark{
+    background-color: rgba(0, 0, 0, 0.2);
+    &.scrolled{
+        background-color: $blackshade !important;
+        transition: background-color 500ms linear;
+    }
+}
+
+#nav-button{
+    text-transform: uppercase;
+    padding: 8px;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $redshade !important;
+        color: white;
+    }
+    
+}
+
+.carr{
+    img{ 
+        width: 100%;
+    }
+    .cont-relative{
+        position: relative;
+        text-align: center;
+        color: white;
+        @include shadow();
+        .centered {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 32px;
+            border-radius: 16px;
+            .text, .titles{
+                font-weight: bolder;
+            }
+            .btns{
+                .btn{
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 13px 20px;
+                    border-radius: none;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    transition: 0.7s;
+                }
+                .btn-warning{
+                    background-color: $redshade;
+                    border: 1px solid $redshade;
+                    &:hover{
+                        color: $redshade;
+                        background-color: $blackshade;
+                        border: 1px solid $blackshade;
+
+                    }
+                }
+                .btn-outline-light{
+                    border: 1px solid grey;
+                    margin-left: 16px;
+                    &:hover{
+                        background-color: $blackshade;
+                        border: 1px solid $redshade;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.desc{
+    color:$blackshade;
+}
+
+.icon-desc{
+    font-size: 40px;
+    color: $redshade;
+}
+
+#second{
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.firstsection{
+    padding: 112px 16px 96px;
+    .mediumtitles{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        @include shadow();
+    }
+    img{
+        width: 80%;
+        padding-left: 5.6vw;
+    }
+    .small{
+        font-size: 25px;
+    }
 }
