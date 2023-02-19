@@ -423,4 +423,14 @@
   font-weight: bold;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-item img {
+  height: 300px;
+}
+
 /*# sourceMappingURL=styles.css.map */
