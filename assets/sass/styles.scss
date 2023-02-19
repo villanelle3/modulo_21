@@ -327,7 +327,7 @@ $blackshaddarkder: #1b1b1b;
 .padded{
     margin-top: 64px;
     #whatTheySay{
-        background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+        background-image: url("https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=1060&t=st=1676761404~exp=1676762004~hmac=ae6267f980e748716237cf49b0e6b63eed713573eeaf269959c3d520d084aa76");
         .titles.titles-section{
             @include shadow();
             padding-top: 64px;
@@ -341,9 +341,19 @@ $blackshaddarkder: #1b1b1b;
             border: 1.5px solid $redshade;
             margin-bottom: 40px;
         }
-        span{
-            font-weight: bold;
+        .author{
+            margin-bottom: 64px;
         }
     }
 }
 
+#v-carousel{
+    padding-bottom: 16px;
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

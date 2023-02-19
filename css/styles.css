@@ -75,9 +75,6 @@
   .padded {
     margin-top: 32px;
   }
-  .padded #whatTheySay {
-    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
-  }
   .padded #whatTheySay .titles.titles-section {
     padding-top: 24px;
   }
@@ -396,7 +393,7 @@
   margin-top: 64px;
 }
 .padded #whatTheySay {
-  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+  background-image: url("https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830026.jpg?w=1060&t=st=1676761404~exp=1676762004~hmac=ae6267f980e748716237cf49b0e6b63eed713573eeaf269959c3d520d084aa76");
 }
 .padded #whatTheySay .titles.titles-section {
   text-shadow: 0.5px 0.5px 0.5px #5e0816;
@@ -411,7 +408,18 @@
   border: 1.5px solid #e84a65;
   margin-bottom: 40px;
 }
-.padded #whatTheySay span {
+.padded #whatTheySay .author {
+  margin-bottom: 64px;
+}
+
+#v-carousel {
+  padding-bottom: 16px;
+}
+#v-carousel h1 {
+  font-size: 20px;
+}
+#v-carousel h2 {
+  font-size: 16px;
   font-weight: bold;
 }
 
