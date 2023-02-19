@@ -358,6 +358,10 @@ $blackshaddarkder: #1b1b1b;
     }
 }
 
+#carouselExampleControls{
+    padding-bottom: 24px;
+}
+
 .carousel-control-prev, .carousel-control-next{
     background-color: transparent;
     border: none;
@@ -365,7 +369,108 @@ $blackshaddarkder: #1b1b1b;
 }
 
 .carousel-item{
-    img{
-        height: 300px;
+    h5{
+        font-weight: bold;
+    }
+}
+
+#plans{
+    margin-top: 64px;
+    .row{
+        margin-top: 64px;
+    }
+
+    .card-body{
+        .card-title{
+            font-size: 27px;
+            span{
+                font-weight: 400;
+            }
+        }
+        hr{
+            width: 80%;
+            margin: auto;
+            border: 1px solid $redshade;
+            margin-bottom: 24px; 
+        }
+        .card-text{
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .price{
+            font-size: 48px;
+            color: $redshade;
+            font-weight: bolder;
+            span{
+                font-size: 18px;
+                color: $blackshade;
+                font-weight: bold;
+            }
+        }
+        .btn.btn-primary{
+            background-color: $redshade;
+            border: none;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 8px;
+            transition: 0.4s;
+            margin-top: 32px;
+            &:hover{
+                background-color: $blackshaddarkder;
+                color: $redshade;
+            }
+        }
+        .list-group-item{
+            text-align: left;
+            i{
+                font-weight: bolder;
+                color: $redshade;
+            }
+        }
+
+    }
+
+    #highligth{
+        color: white;
+        .price{
+            span{
+                color: white;
+            }
+        }
+
+    }
+}
+
+footer{
+    background-color: $blackshade;
+    color: white;
+    @include shadow();
+    margin-top: 64px;
+    .row{
+        img{
+            width:180px;
+        }
+    }
+    #mail{
+        margin-top: 32px;
+    }
+    ul{
+        list-style: none;
+    }
+    #descripition{
+        li{
+            font-weight: bold;
+            text-align: left;
+            &::before {
+                content: "\2022";
+                color: $redshade;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1.5em;
+                margin-left: -1em;
+            }
+        }
     }
 }

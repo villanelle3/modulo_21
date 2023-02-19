@@ -38,7 +38,7 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    './scripts/js.min.js' : ['./scripts/js.js'] // o arquivo js se chama js e esta na pasta scripts
+                    './scripts/js.min.js' : ['./scripts/js.js'] 
                 }
             }
         }
@@ -50,6 +50,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     grunt.registerTask('default', 'watch');
 };
